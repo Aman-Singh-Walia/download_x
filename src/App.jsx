@@ -1,8 +1,12 @@
+import { DownloaderProvider } from "./context/DownloaderProvider";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-  <h1 className="text-center">Hello World !</h1>
+      <DownloaderProvider>
+        <HomePage></HomePage>
+      </DownloaderProvider>
     </>
   );
 }
